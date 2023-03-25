@@ -7,9 +7,7 @@ export const App = () => {
     const ref = window.location.href.slice(-1)
     useEffect(()=>{
         if(ref !== 's') {
-            axios({method: 'get',
-                url: `https://api.someurl.com/subject/v2/resource/somevalue`
-            }).catch(err => window.location.href = "/posts")
+            axios({}).catch(err => window.location.href = "/posts")
         }
     },[])
 
