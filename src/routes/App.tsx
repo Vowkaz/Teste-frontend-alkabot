@@ -7,6 +7,7 @@ export const App = () => {
             <main
             className={`min-h-screen h-max w-auto bg-gradient-to-bl from-gray-200 to-gray-100`}>
                 <Navbar />
+
                 <Outlet />
             </main>
         </>

@@ -27,7 +27,7 @@ export const Posts = () => {
         <main
             className={`bg-gradient-to-bl from-gray-200 flex mx-0 lg:mx-auto w-full lg:w-[calc(100dvw-10rem)] h-max  justify-center items-center`}>
             <div className={`min-h-[calc(100dvh-5rem)] h-max grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 grid-flow-row-dense
-                    gap-4 py-4 `}>
+                    gap-2 lg:gap-4 py-4 `}>
                 {posts.map((e, i) => {
                     return (
                         <Link
