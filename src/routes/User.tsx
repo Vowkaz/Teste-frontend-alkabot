@@ -1,6 +1,6 @@
 // @ts-ignore
 import {api, getUser} from "../../lib/axios";
-import {useLoaderData} from "react-router-dom";
+import {Link, useLoaderData} from "react-router-dom";
 
 // type User = {
 //     id: number;
@@ -43,9 +43,9 @@ export const User = () => {
     return (
         <>
             <main
-                className={`h-[calc(100dvh-5rem)] overflow-hidden flex justify-center items-center`}
+                className={`h-[calc(100dvh-5rem)] overflow-y-scroll sm:overflow-hidden  overflow-hidden flex justify-center items-center`}
             >
-                <section className={`container w-[calc(100dvh-20rem] bg-gray-300/40 h-fit lg:h-[calc(100dvh-10rem)] p-4 mx-auto border-2 border-gray-300
+                <section className={`container w-[calc(100dvh-20rem] bg-gray-300/40 h-max lg:h-[calc(100dvh-10rem)] p-4 mx-auto border-2 border-gray-300
             rounded-lg px-8`}>
                     <div
                         className={` text-gray-800 mb-12`}>
@@ -97,7 +97,12 @@ export const User = () => {
                     </div>
 
                     <div
-                        className={`flex justify-end mt-4`}>
+                        className={`flex justify-end items-center mt-4`}>
+                        <Link
+                            to={`/users`}
+                            className={`text-gray-700/80 items-center mx-4 hover:text-gray-900`}>
+                            Come back
+                        </Link>
                         <a href={link} target="_blank" className="self-end border border-gray-600/40
                                     hover:bg-gray-300/50
                                     rounded-lg p-2 bottom-0">

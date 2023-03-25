@@ -13,7 +13,9 @@ import { User ,
 import { Users } from "./routes/UserList";
 import {Posts} from "./routes/Posts";
 import {Comments,
-    loader as commentsLoader} from "./routes/Comments";
+    loader as commentsLoader} from "./components/Comments";
+import {Post,
+        loader as postLoader} from "./routes/Post";
 
 
 const router = createBrowserRouter([
@@ -36,9 +38,16 @@ const router = createBrowserRouter([
                 element: <Posts/>
             },
             {
-                path: "posts/:id/comments",
-                loader: commentsLoader,
-                element: <Comments/>
+                path: "posts/:id",
+                loader: postLoader,
+                element: <Post/>,
+                children: [
+                    {
+                        path: "comments",
+                        loader: commentsLoader,
+                        element: <Comments/>,
+                    }
+                ]
             }
         ]
     },

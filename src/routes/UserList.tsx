@@ -75,7 +75,7 @@ export const Users = () => {
                                     rounded-lg p-2 bottom-0">
                                         Visit website
                                     </a>
-                                    <Link className={`text-gray-800`} to={`${e.id}`}>
+                                    <Link className={`text-gray-700/80 items-center mx-4 hover:text-gray-900`} to={`${e.id}`}>
                                         See me
                                     </Link>
 
