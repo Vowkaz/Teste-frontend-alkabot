@@ -1,9 +1,8 @@
 import {Link, useRouteError} from "react-router-dom";
 
 export default function ErrorPage() {
-    const error = useRouteError();
+    const error:any = useRouteError();
     console.error(error);
-
     return (
         <section id="error-page"
                  className={`flex flex-col items-center justify-center bg-gradient-to-bl from-gray-200 to-gray-100 h-screen text-2xl`}>
