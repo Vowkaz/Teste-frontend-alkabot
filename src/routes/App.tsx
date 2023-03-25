@@ -6,7 +6,7 @@ import {useEffect} from "react";
 export const App = () => {
     const ref = window.location.href.slice(-1)
     useEffect(()=>{
-        if(ref=== '/') {
+        if(ref !== 's') {
             axios({}).catch(err => window.location.href = "/posts")
         }
     },[])
