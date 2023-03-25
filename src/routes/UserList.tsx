@@ -58,7 +58,7 @@ export const Users = () => {
                         return (
                             <section
                                 className="w-[90dvw] md:w-[35dvw] lg:w-[25dvw] 2xl:w-[20dvw] h-fit
-                       bg-gray-300 border border-gray-700/40 px-4 py-8 rounded-lg flex flex-col "
+                       bg-gray-300/40 border border-gray-700/40 px-4 py-8 rounded-lg flex flex-col "
                                 key={e.id + i}
                             >
                                 <div className="w-full h-fit flex  flex-col justify-between">
@@ -71,11 +71,11 @@ export const Users = () => {
                                 <nav className={`mt-4 space-x-4`}>
 
                                     <a href={link} target="_blank" className="self-end border border-gray-600/40
-                                    hover:bg-gray-400/40
+                                    hover:bg-gray-300/50
                                     rounded-lg p-2 bottom-0">
                                         Visit website
                                     </a>
-                                    <Link className={`text-gray-700`} to={`${e.id}`}>
+                                    <Link className={`text-gray-800`} to={`${e.id}`}>
                                         See me
                                     </Link>
 

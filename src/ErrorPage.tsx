@@ -13,7 +13,7 @@ export default function ErrorPage() {
             </p>
             <Link
                 className={`mt-8 mx-2 px-4 py-1 text-2xl text-gray-400 hover:text-slate-900`}
-                to="/"
+                to="/posts"
             >
                 Venha para o inicio
             </Link>

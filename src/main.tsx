@@ -11,7 +11,9 @@ import { User ,
     loader as userLoader
 } from "./routes/User";
 import { Users } from "./routes/UserList";
-import {loader} from "./routes/User";
+import {Posts} from "./routes/Posts";
+import {Comments,
+    loader as commentsLoader} from "./routes/Comments";
 
 
 const router = createBrowserRouter([
@@ -29,6 +31,15 @@ const router = createBrowserRouter([
                 loader: userLoader,
                 element: <User />
             },
+            {
+                path: "posts",
+                element: <Posts/>
+            },
+            {
+                path: "posts/:id/comments",
+                loader: commentsLoader,
+                element: <Comments/>
+            }
         ]
     },
 ]);

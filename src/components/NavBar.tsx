@@ -11,7 +11,7 @@ export const Navbar = () => {
                 <Link
                     className={`mx-2 border border-gray-600/40 rounded-lg px-4 py-1 text-2xl hover:bg-gray-300 hover:text-gray-900
                     shadow-black shadow-sm  hover:shadow-gray-600`}
-                    to="/"
+                    to="/posts"
                 >
                     All posts
                 </Link>

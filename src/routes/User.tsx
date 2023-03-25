@@ -45,20 +45,20 @@ export const User = () => {
             <main
                 className={`h-[calc(100dvh-5rem)] overflow-hidden flex justify-center items-center`}
             >
-                <section className={`container w-[calc(100dvh-20rem] h-fit lg:h-[calc(100dvh-10rem)] overflow-scroll  p-4 mx-auto border-2 border-gray-300
+                <section className={`container w-[calc(100dvh-20rem] bg-gray-300/40 h-fit lg:h-[calc(100dvh-10rem)] p-4 mx-auto border-2 border-gray-300
             rounded-lg px-8`}>
                     <div
                         className={` text-gray-800 mb-12`}>
-                        <p className={`tracking-[1rem] text-2xl`}>{user.name}</p>
-                        <p className={`text-lg text-gray-800`}>trabalhando na {user.company.name}</p>
+                        <p className={`tracking-[1rem] text-2xl mb-2`}>{user.name}</p>
+                        <p className={`text-lg text-gray-800`}>Working at {user.company.name}</p>
                         <p className={`text-lg text-gray-800/70`}>{user.company.bs}</p>
-                        <label className={`text-lg text-gray-800/70`}>{user.username}</label>
+                        <label className={`text-lg text-gray-800/70`}>@{user.username}</label>
                     </div>
 
                     <article className={`mb-12`}>
                         <div className={`flex flex-row text-lg `}>E-mail: <p
                             className={`mx-4 text-gray-800/70 lowercase`}>{user.email}</p></div>
-                        <div className={`flex flex-row text-lg `}>Telefone: <p
+                        <div className={`flex flex-row text-lg `}>Cell: <p
                             className={`mx-4 text-gray-800/70 lowercase`}>{user.phone}</p></div>
                     </article>
 
@@ -71,25 +71,25 @@ export const User = () => {
                             className={`space-y-2 flex flex-col`}>
 
                             <label
-                                className={`flex flex-row border-2 rounded border-gray-300/40 px-4 py-2 text-gray-800`}> Rua:
+                                className={`flex flex-row border-2 rounded border-gray-300/40 px-4 py-2 text-gray-800`}> Street:
                                 <p
                                     className={`mx-2 text-gray-800/70`}> {user.address.street} </p>
                             </label>
 
                             <label
-                                className={`flex flex-row border-2 rounded border-gray-300/40 px-4 py-2 text-gray-800`}> Numero:
+                                className={`flex flex-row border-2 rounded border-gray-300/40 px-4 py-2 text-gray-800`}> Suite:
                                 <p
                                     className={`mx-2 text-gray-800/70`}> {user.address.suite} </p>
                             </label>
 
                             <label
-                                className={`flex flex-row border-2 rounded border-gray-300/40 px-4 py-2 text-gray-800`}> Cidade:
+                                className={`flex flex-row border-2 rounded border-gray-300/40 px-4 py-2 text-gray-800`}> City:
                                 <p
                                     className={`mx-2 text-gray-800/70`}> {user.address.city} </p>
                             </label>
 
                             <label
-                                className={`flex flex-row border-2 rounded border-gray-300/40 px-4 py-2 text-gray-800`}> cep:
+                                className={`flex flex-row border-2 rounded border-gray-300/40 px-4 py-2 text-gray-800`}> Zip:
                                 <p
                                     className={`mx-2 text-gray-800/70`}> {user.address.zipcode} </p></label>
 
@@ -99,7 +99,7 @@ export const User = () => {
                     <div
                         className={`flex justify-end mt-4`}>
                         <a href={link} target="_blank" className="self-end border border-gray-600/40
-                                    hover:bg-gray-400/40
+                                    hover:bg-gray-300/50
                                     rounded-lg p-2 bottom-0">
                             Visit website
                         </a>
