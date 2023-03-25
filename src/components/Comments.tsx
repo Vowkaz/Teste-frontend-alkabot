@@ -17,7 +17,7 @@ export const Comments = () => {
     const {comments} = useLoaderData()
     // @ts-ignore
     return <>
-        {comments.map((e, i) => {
+        {comments.map((e:any, i:number) => {
             return <main
                 key={e.id + i}
                 className={`w-full lg:w-[calc(100dvw-10rem)] mx-0 my-2 lg:mx-auto h-max bg-gray-200 rounded-lg
