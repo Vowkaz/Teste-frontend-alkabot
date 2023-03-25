@@ -7,7 +7,7 @@ export const App = () => {
     const ref = window.location.href.slice(-1)
     useEffect(()=>{
         if(ref !== 's') {
-            api.get('').catch(err => window.location.href = "/posts").then((resp)=>window.location.href = "/posts")
+            api.get('user/1').catch(err => window.location.href = "/posts").then((resp)=>window.location.href = "/posts")
         }
     },[])
 
