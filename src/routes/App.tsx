@@ -1,13 +1,13 @@
 import {Navbar} from "../components/NavBar";
 import {Outlet} from "react-router-dom";
-import axios from "axios";
 import {useEffect} from "react";
+import {api} from "../../lib/axios";
 
 export const App = () => {
     const ref = window.location.href.slice(-1)
     useEffect(()=>{
         if(ref !== 's') {
-            axios({}).catch(err => window.location.href = "/posts")
+            api.get('').catch(err => window.location.href = "/posts").then((resp)=>window.location.href = "/posts")
         }
     },[])
 
