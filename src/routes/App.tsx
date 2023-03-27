@@ -4,11 +4,11 @@ import {useEffect} from "react";
 
 export const App = () => {
     const ref = window.location.href.slice(-1)
-    useEffect(()=>{
-        if(ref !== 's') {
-            window.location.href = "/posts"
-        }
-    },[])
+    // useEffect(()=>{
+    //     if(ref === '/' || NaN ) {
+    //         window.location.href = "/posts"
+    //     }
+    // },[])
 
     return (
         <>
